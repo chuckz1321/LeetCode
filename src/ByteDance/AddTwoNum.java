@@ -11,7 +11,7 @@ public class AddTwoNum {
         ListNode dummyNode = new ListNode(-1);
         ListNode last = dummyNode;
         int up = 0;
-        while (l1 !=null || l2 != null) {
+        while (l1 != null || l2 != null) {
             int n1 = l1 == null ? 0 : l1.val;
             int n2 = l2 == null ? 0 : l2.val;
             last.next = new ListNode((n1 + n2 + up) % 10);
@@ -39,7 +39,18 @@ public class AddTwoNum {
 class ListNode {
     int val;
     ListNode next;
+
     ListNode(int x) {
+        val = x;
+    }
+}
+
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode(int x) {
         val = x;
     }
 }
